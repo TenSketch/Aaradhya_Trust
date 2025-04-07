@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaradhya - Home</title>
+  <!-- Meta Tags -->
+  <meta name="description" content="Aaradhya - Celebrating the life and legacy of S.P. Balasubrahmanyam" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aaradhya" />
+  <meta property="og:description" content="A foundation dedicated to the legendary singer S.P. Balasubrahmanyam." />
+  <meta property="og:image" content="assets/images/spb.jpg" />
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- GSAP -->
+</head>
+<body>
+  <!-- Navbar -->
+  <!-- <div id="navbar"></div> -->
+  <nav class="navbar fixed top-0  bg-transparent  z-50 transition-all mx-auto px-5 py-3 flex items-center justify-between">
+      <div class="navbar-brand flex-auto">
+        <img src="assets/images/logo-Aaradhya_trust.png" class="logo" alt="logo-Aaradhya_trust">
+
+      </div>
+      <ul id="menu" class="nav-links flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 justify-center items-center">
+        <li><a href="index.html" class="nav-link flex items-center"><i class="fas fa-home mr-1"></i> Home</a></li>
+        <li><a href="spb-memorial.html" class="nav-link flex items-center"><i class="fas fa-monument mr-1"></i> SPB Memorial</a></li>
+        <li><a href="board-members.html" class="nav-link flex items-center"><i class="fas fa-users mr-1"></i> Board Members</a></li>
+        <li><a href="gallery.html" class="nav-link flex items-center"><i class="fas fa-images mr-1"></i> Gallery</a></li>
+        <li><a href="donations.html" class="nav-link flex items-center"><i class="fas fa-donate mr-1"></i> Donate</a></li>
+      </ul>
+      <button id="menu-toggle" class="flex-auto lg:hidden">
+          <!-- write fa hamburger icon -->
+          <i class="fa-brands fa-pagelines fa-3x"></i>
+      </button>
+  </nav>
+  <!-- Home Page Content -->
+  <main class="pt-20">
+    <section class="container mx-auto px-4 py-10">
+      <h1 class="text-4xl font-bold text-gold mb-6">Aaradhya</h1>
+      <p class="mb-8">
+        The word Aaradhya means “worshipped”. It is a Sanskrit word inferring the blessing of Lord Ganesh.
+        Aaradhya is a foundation started by family members of the late Shri S.P. Balasubrahmanyam to remember,
+        commemorate and celebrate the life and legacy of the legendary singer.
+      </p>
+      <!-- SPB Image loaded from JSON -->
+      <div id="homeImage" class="mb-8"></div>
+      <p>
+        Though he is not here in this mortal world, his music and songs have created a deep impact on every listener’s heart,
+        enabling them to cherish each emotion through his voice. Such a legend has to be celebrated for eternity.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  
+  <!-- Common JS: Navbar, Footer, and Image Loading -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // Load home page image from images.json (defined in common.js)
+    loadHomeImage();
+  </script>
+</body>
+</html>

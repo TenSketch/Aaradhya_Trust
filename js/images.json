@@ -1,0 +1,26 @@
+{
+  "home": {
+    "spbImage": "assets/images/spb.jpg"
+  },
+  "spbMemorial": {
+    "video": "assets/videos/spb_memorial.mp4",
+    "designPlan": [
+      { "title": "Virtual View - Day", "src": "assets/images/design-day.jpg" },
+      { "title": "Virtual View - Night", "src": "assets/images/design-night.jpg" },
+      { "title": "Walk way", "src": "assets/images/design-walk.jpg" },
+      { "title": "Amphitheatre", "src": "assets/images/design-amphi.jpg" }
+    ]
+  },
+  "gallery": {
+    "images": [
+      "assets/images/gallery1.jpg",
+      "assets/images/gallery2.jpg",
+      "assets/images/gallery3.jpg",
+      "assets/images/gallery4.jpg",
+      "assets/images/gallery5.jpg",
+      "assets/images/gallery6.jpg",
+      "assets/images/gallery7.jpg",
+      "assets/images/gallery8.jpg"
+    ]
+  }
+}

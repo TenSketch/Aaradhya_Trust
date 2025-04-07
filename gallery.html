@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaradhya - Gallery</title>
+  <meta name="description" content="Gallery of the SPB Memorial and events" />
+  <meta property="og:title" content="Gallery" />
+  <meta property="og:description" content="Bird's eye view of the tombstone and more." />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  
+  <!-- Gallery Content -->
+  <main class="pt-20 container mx-auto px-4 py-10">
+    <h1 class="text-4xl font-bold text-gold mb-6">Gallery</h1>
+    <p class="mb-6">
+      Welcome to a bird's eye view of the tombstone where Shri S.P. Balasubrahmanyam was laid to rest.
+      Aaradhya connects the world through its architectural poetry and ode to the legendary singer.
+    </p>
+    <div id="galleryImages" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- JS will load 8 gallery images -->
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <div id="footer"></div>
+  
+  <!-- Common JS: Navbar, Footer, and Image Loading -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // Load gallery images
+    loadGalleryImages();
+  </script>
+</body>
+</html>

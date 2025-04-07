@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaradhya - Donate</title>
+  <meta name="description" content="Donate to support Aaradhya's mission" />
+  <meta property="og:title" content="Donate" />
+  <meta property="og:description" content="Make a difference by donating to Aaradhya." />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  
+  <!-- Donation Form Section -->
+  <main class="pt-20">
+    <section class="donate-form-section py-5">
+      <div class="container py-5 mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Left: Image -->
+          <div class="md:w-1/2 text-center">
+            <img src="assets/images/donation-img.jpg" alt="Donate to Support" class="img-fluid donate-img">
+          </div>
+          <!-- Right: Form -->
+          <div class="md:w-1/2 mt-4 md:mt-0">
+            <div class="bg-gray-800 shadow-lg p-4 md:p-8 rounded">
+              <div class="card-body">
+                <h2 class="text-gold text-center text-2xl font-bold">Make a Difference – Donate Now</h2>
+                <p class="text-gray-300 text-center mb-4">
+                  Your details are secure and used only for tax exemptions under our
+                  <a href="privacy-policy.html" class="underline text-gold">Privacy Policy</a>.
+                </p>
+                <form id="donationForm" name="Donation" method="POST" novalidate data-netlify-recaptcha="true" data-netlify="true">
+                  <!-- Name -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control p-2 w-full" id="donorName" name="donor_name"
+                      placeholder="Full Name" required minlength="3" maxlength="50">
+                    <label for="donorName" class="block">Full Name <span class="text-red-500">*</span></label>
+                    <div class="invalid-feedback">Please enter a valid name (3-50 characters).</div>
+                  </div>
+                  <!-- Mobile Number -->
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control p-2 w-full" id="donorMobile" name="donor_mobile"
+                      placeholder="Mobile Number" required pattern="[6-9]\d{9}" maxlength="10">
+                    <label for="donorMobile" class="block">Mobile Number <span class="text-red-500">*</span></label>
+                    <div class="invalid-feedback">Enter a valid 10-digit mobile number.</div>
+                  </div>
+                  <!-- Email -->
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control p-2 w-full" id="donorEmail" name="donor_email"
+                      placeholder="Email Address" required>
+                    <label for="donorEmail" class="block">Email Address <span class="text-red-500">*</span></label>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+                  <!-- Aadhar Number -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control p-2 w-full" id="donorAadhar" name="donor_aadhar"
+                      placeholder="Aadhar Number" required pattern="\d{12}" maxlength="12">
+                    <label for="donorAadhar" class="block">Aadhar Number (For Tax Exemptions) <span class="text-red-500">*</span></label>
+                    <div class="invalid-feedback">Enter a valid 12-digit Aadhar number.</div>
+                    <small class="text-gray-400">Your Aadhar is required for tax benefits and remains confidential.</small>
+                  </div>
+                  <!-- PAN Number -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control p-2 w-full" id="donorPan" name="donor_pan"
+                      placeholder="PAN Number" required pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" maxlength="10" oninput="convertToUppercase(this)">
+                    <label for="donorPan" class="block">PAN Number (For Tax Exemptions) <span class="text-red-500">*</span></label>
+                    <div class="invalid-feedback">Enter a valid PAN number (Format: ABCDE1234F).</div>
+                    <small class="text-gray-400">Your PAN is required for issuing 80G tax exemption certificates.</small>
+                  </div>
+                  <!-- Donation Amount -->
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control p-2 w-full" id="donationAmount" name="donation_amount"
+                      placeholder="Donation Amount" required min="100" max="1000000">
+                    <label for="donationAmount" class="block">Donation Amount (INR) <span class="text-red-500">*</span></label>
+                    <div class="invalid-feedback">Please enter an amount between ₹100 - ₹10,00,000.</div>
+                  </div>
+                  <!-- Message (Optional) -->
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control p-2 w-full" id="donorMessage" name="donor_message" placeholder="Leave a message (optional)" rows="3"></textarea>
+                    <label for="donorMessage" class="block">Message (Optional)</label>
+                  </div>
+                  <div data-netlify-recaptcha="true"></div>
+                  <!-- Submit Button -->
+                  <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary w-full bg-gold text-black py-2 rounded">Proceed to Donate</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <div id="footer"></div>
+  
+  <!-- Common JS: Navbar, Footer, and Image Loading -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    function convertToUppercase(input) {
+      input.value = input.value.toUpperCase();
+    }
+  </script>
+</body>
+</html>

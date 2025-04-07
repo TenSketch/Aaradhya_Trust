@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaradhya - SPB Memorial</title>
+  <meta name="description" content="S.P.B. Memorial dedicated to the legendary singer with sustainable design." />
+  <meta property="og:title" content="SPB Memorial" />
+  <meta property="og:description" content="A sustainable memorial dedicated to S.P. Balasubrahmanyam." />
+  <meta property="og:image" content="assets/images/spb.jpg" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  
+  <!-- SPB Memorial Content -->
+  <main class="pt-20">
+    <!-- Full Screen Video Section -->
+    <section class="relative h-screen overflow-hidden">
+      <video autoplay muted loop class="absolute w-full h-full object-cover">
+        <source src="assets/videos/spb_memorial.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="relative z-10 flex items-center justify-center h-full bg-black bg-opacity-50">
+        <h1 class="text-5xl font-bold text-gold">SPB Memorial</h1>
+      </div>
+    </section>
+    
+    <!-- Foundation Content -->
+    <section class="container mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold text-gold mb-6">The Foundation</h2>
+      <p class="mb-6">
+        S.P. Balasubrahmanyam is a name that always resonates synonymous with music. While every obituary to him since he passed away
+        due to COVID-19 in 2020 is dedicated to his pure talent, enthralling voice, the magnetism of his personality, and affable nature,
+        there is a lesser-known side of him that is known only in his close circle – how environmentally conscious he was.
+      </p>
+      <!-- More foundation text... -->
+    </section>
+    
+    <!-- Design & Plan Section with Fancy Box Gallery -->
+    <section class="container mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold text-gold mb-6">Design &amp; Plan</h2>
+      <div id="designGallery" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- JS will load 4 images from images.json -->
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <div id="footer"></div>
+  
+  <!-- Common JS: Navbar, Footer, and Image Loading -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // Load SPB Memorial design images
+    loadDesignGallery();
+  </script>
+</body>
+</html>
