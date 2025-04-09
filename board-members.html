@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aaradhya - Board Members</title>
-  <meta name="description" content="Meet the board members of Aaradhya" />
-  <meta property="og:title" content="Board Members" />
-  <meta property="og:description" content="Dedicated professionals behind Aaradhya." />
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <title>Aaradhya Trust - Board Members</title>
+  <!-- Meta Tags -->
+  <meta name="description"
+    content="Aaradhya is a heartfelt foundation honoring the timeless legacy of S.P. Balasubrahmanyam. Founded by his family, it celebrates his life, music, and the deep emotional impact he left on generations.">
+  <meta name="keywords"
+    content="Aaradhya Foundation, S.P. Balasubrahmanyam, SPB Legacy, Musical Legend, Tribute to SPB, Indian Music Icon, Worshipped, Musical Tribute, COVID Remembrance, Eternal Music, Indian Singer Memorial, Aaradhya Vision, SPB Foundation, Emotional Tribute, Celebrating SPB, Legendary Singer India">
+  <meta name="author" content="TenSketch">
+  <!-- Open Graph -->
+  <meta property="og:title" content="AaradhyaTrust - Honouring the Eternal Legacy of S.P. Balasubrahmanyam">
+  <meta property="og:description"
+    content="Aaradhya is a heartfelt foundation honoring the timeless legacy of S.P. Balasubrahmanyam. Founded by his family, it celebrates his life, music, and the deep emotional impact he left on generations.">
+  <meta property="og:image" content="https://https://www.aaradhyatrust.org/ogimage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://https://www.aaradhyatrust.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Aaradhya Trust">
+  <meta name="theme-color" content="#105b1a">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Tailwind CSS -->
+
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -15,14 +32,34 @@
   crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
-  <div id="navbar"></div>
+  <nav class="navbar fixed top-0   z-50 transition-all mx-auto px-5 py-3 flex items-center justify-between">
+    <div class="navbar-brand flex-auto">
+      <img src="assets/images/logo-Aaradhya_trust.png" class="logo" alt="logo-Aaradhya_trust">
+    </div>
+    <ul id="menu"
+      class="nav-links flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-6 justify-center items-center">
+      <li><a href="index.html" class="nav-link flex items-center"><i class="fas fa-home mr-1"></i> Home</a></li>
+      <li><a href="spb-memorial.html" class="nav-link flex items-center"><i class="fas fa-monument mr-1"></i> SPB
+          Memorial</a></li>
+      <li><a href="board-members.html" class="nav-link flex items-center"><i class="fas fa-users mr-1"></i> Board
+          Members</a></li>
+      <li><a href="gallery.html" class="nav-link flex items-center"><i class="fas fa-images mr-1"></i> Gallery</a></li>
+      <li><a href="contact-us.html" class="nav-link flex items-center"><i class="fas fa-envelope mr-1"></i> Contact Us</a></li>
+
+      <li><a href="donate.html" class="nav-link flex items-center"><i class="fas fa-donate mr-1"></i> Donate</a></li>
+    </ul>
+    <button id="menu-toggle" class="flex-auto lg:hidden">
+      <!-- write fa hamburger icon -->
+      <i class="fa-brands fa-pagelines fa-3x"></i>
+    </button>
+  </nav>
   
-  <!-- Board Members Content -->
-  <main class="pt-20 container mx-auto px-4 py-10">
+  <!-- Board Members -->
+  <main class="pt-[200px] container mx-auto px-4 pb-5">
     <h1 class="text-4xl font-bold text-gold mb-6">Board Members</h1>
     <p class="mb-4">
       <!-- Static content for board members goes here -->
@@ -31,12 +68,74 @@
   </main>
   
   <!-- Footer -->
-  <div id="footer"></div>
+  <footer class="py-8 mt-10 px-5 py-3">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- pages -->
+      <div class="col1">
+        <h5 class="text-xl font-bold mb-2">Pages</h5>
+        <ul>
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="spb-memorial.html" class="hover:text-gold">SPB Memorial</a></li>
+          <li><a href="board-members.html" class="hover:text-gold">Board Members</a></li>
+          <li><a href="gallery.html" class="hover:text-gold">Gallery</a></li>
+          <li><a href="donate.html" class="hover:text-gold">Donate</a></li>
+        </ul>
+      </div>
+      <!-- legal and policies -->
+      <div class="col2">
+        <h5 class="text-xl font-bold mb-2">Legal & Policies</h5>
+        <ul>
+          <li><a href="privacy-policy.html" class="hover:text-gold">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html" class="hover:text-gold">Terms &amp; Conditions</a></li>
+          <li><a href="Cancellation-and-Refund-Policy.html" class="hover:text-gold">Cancellation &amp; Refund Policy</a>
+          </li>
+          <li><a href="Shipping-and-Delivery-Policy.html" class="hover:text-gold">Shipping &amp; Delivery Policy</a>
+          </li>
+        </ul>
+      </div>
+      <!-- social media -->
+      <div class="col3">
+        <h5 class="text-xl font-bold mb-2">Social</h5>
+        <ul>
+          <li><a href="#" class="hover:text-gold"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#" class="hover:text-gold"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#" class="hover:text-gold"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+      <!-- contact info and address -->
+      <div class="col4">
+        <h5 class="text-xl font-bold mb-2">Contact Us</h5>
+        <p class="font-bold">Aaradhya Charitable Trust</p>
+        <address class="">Old No. 16, New No. 41,<br>Kamdar Nagar, Nungambakkam,<br>Chennai, Tamll Nadu - 600034
+        </address>
+        <p class="">Contact no.: <a href="tel:+9791014236">9791014236</a></p>
+        <p class="">Email: <a href="mailto:trustaaradhya@gmail.com">trustaaradhya@gmail.com</a></p>
+        <!-- R/Chennal Central Jolnt Il/Book-4/95/2022. -->
+        <!-- AAJTA6207EF20211 -->
+      </div>
+      <!-- <h4></h4> -->
+    </div>
+    <hr class="border-0 h-0.5 bg-white rounded-full opacity-30 my-5 w-full container mx-auto" />
+    <div class="container footer-bottom mx-auto px-4 w-full flex-wrap  md:justify-between align-center  ">
+      <p class="mb-0">&copy; 2025 Aaradhya Trust. All rights reserved.</p>
+      <p class="mb-0">Sketched with <i class="fa fa-heart"></i> by
+        <a href="https://www.tensketch.com/" class="">TenSketch</a>
+      </p>
+    </div>
+    <!-- <div class="text-center mt-4 text-gray-500">
+      ©2023 by AaradhyaTrust
+    </div> -->
+  </footer>
   
   <!-- Common JS: Navbar, Footer, and Image Loading -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="js/common.js"></script>
+  <!-- <script>
+    // Load SPB Memorial design images
+    loadDesignGallery();
+  </script> -->
 </body>
 </html>
+

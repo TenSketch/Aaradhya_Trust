@@ -1,69 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aaradhya - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaradhya Trust - Honouring the Eternal Legacy of S.P. Balasubrahmanyam</title>
   <!-- Meta Tags -->
-  <meta name="description" content="Aaradhya - Celebrating the life and legacy of S.P. Balasubrahmanyam" />
+  <meta name="description"
+    content="Aaradhya is a heartfelt foundation honoring the timeless legacy of S.P. Balasubrahmanyam. Founded by his family, it celebrates his life, music, and the deep emotional impact he left on generations.">
+  <meta name="keywords"
+    content="Aaradhya Foundation, S.P. Balasubrahmanyam, SPB Legacy, Musical Legend, Tribute to SPB, Indian Music Icon, Worshipped, Musical Tribute, COVID Remembrance, Eternal Music, Indian Singer Memorial, Aaradhya Vision, SPB Foundation, Emotional Tribute, Celebrating SPB, Legendary Singer India">
+  <meta name="author" content="TenSketch">
   <!-- Open Graph -->
-  <meta property="og:title" content="Aaradhya" />
-  <meta property="og:description" content="A foundation dedicated to the legendary singer S.P. Balasubrahmanyam." />
-  <meta property="og:image" content="assets/images/spb.jpg" />
+  <meta property="og:title" content="AaradhyaTrust - Honouring the Eternal Legacy of S.P. Balasubrahmanyam">
+  <meta property="og:description"
+    content="Aaradhya is a heartfelt foundation honoring the timeless legacy of S.P. Balasubrahmanyam. Founded by his family, it celebrates his life, music, and the deep emotional impact he left on generations.">
+  <meta property="og:image" content="https://https://www.aaradhyatrust.org/ogimage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://https://www.aaradhyatrust.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Aaradhya Trust">
+  <meta name="theme-color" content="#105b1a">
   <!-- Favicon -->
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
-
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <!-- GSAP -->
 </head>
+
 <body>
   <!-- Navbar -->
-  <!-- <div id="navbar"></div> -->
-  <nav class="navbar fixed top-0  bg-transparent  z-50 transition-all mx-auto px-5 py-3 flex items-center justify-between">
-      <div class="navbar-brand flex-auto">
-        <img src="assets/images/logo-Aaradhya_trust.png" class="logo" alt="logo-Aaradhya_trust">
+  <nav class="navbar fixed top-0   z-50 transition-all mx-auto px-5 py-3 flex items-center justify-between">
+    <div class="navbar-brand flex-auto">
+      <img src="assets/images/logo-Aaradhya_trust.png" class="logo" alt="logo-Aaradhya_trust">
+    </div>
+    <ul id="menu"
+      class="nav-links flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-6 justify-center items-center">
+      <li><a href="index.html" class="nav-link flex items-center"><i class="fas fa-home mr-1"></i> Home</a></li>
+      <li><a href="spb-memorial.html" class="nav-link flex items-center"><i class="fas fa-monument mr-1"></i> SPB
+          Memorial</a></li>
+      <li><a href="board-members.html" class="nav-link flex items-center"><i class="fas fa-users mr-1"></i> Board
+          Members</a></li>
+      <li><a href="gallery.html" class="nav-link flex items-center"><i class="fas fa-images mr-1"></i> Gallery</a></li>
+      <li><a href="contact-us.html" class="nav-link flex items-center"><i class="fas fa-envelope mr-1"></i> Contact Us</a></li>
 
-      </div>
-      <ul id="menu" class="nav-links flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 justify-center items-center">
-        <li><a href="index.html" class="nav-link flex items-center"><i class="fas fa-home mr-1"></i> Home</a></li>
-        <li><a href="spb-memorial.html" class="nav-link flex items-center"><i class="fas fa-monument mr-1"></i> SPB Memorial</a></li>
-        <li><a href="board-members.html" class="nav-link flex items-center"><i class="fas fa-users mr-1"></i> Board Members</a></li>
-        <li><a href="gallery.html" class="nav-link flex items-center"><i class="fas fa-images mr-1"></i> Gallery</a></li>
-        <li><a href="donations.html" class="nav-link flex items-center"><i class="fas fa-donate mr-1"></i> Donate</a></li>
-      </ul>
-      <button id="menu-toggle" class="flex-auto lg:hidden">
-          <!-- write fa hamburger icon -->
-          <i class="fa-brands fa-pagelines fa-3x"></i>
-      </button>
+      <li><a href="donate.html" class="nav-link flex items-center"><i class="fas fa-donate mr-1"></i> Donate</a></li>
+    </ul>
+    <button id="menu-toggle" class="flex-auto lg:hidden">
+      <!-- write fa hamburger icon -->
+      <i class="fa-brands fa-pagelines fa-3x"></i>
+    </button>
   </nav>
   <!-- Home Page Content -->
   <main class="pt-20">
-    <section class="container mx-auto px-4 py-10">
-      <h1 class="text-4xl font-bold text-gold mb-6">Aaradhya</h1>
-      <p class="mb-8">
-        The word Aaradhya means “worshipped”. It is a Sanskrit word inferring the blessing of Lord Ganesh.
-        Aaradhya is a foundation started by family members of the late Shri S.P. Balasubrahmanyam to remember,
-        commemorate and celebrate the life and legacy of the legendary singer.
-      </p>
-      <!-- SPB Image loaded from JSON -->
-      <div id="homeImage" class="mb-8"></div>
-      <p>
-        Though he is not here in this mortal world, his music and songs have created a deep impact on every listener’s heart,
-        enabling them to cherish each emotion through his voice. Such a legend has to be celebrated for eternity.
-      </p>
+    <section id="hero" class="relative px-4 py-[100px] overflow-hidden bg-white">
+      <!-- Background Circle Gradient -->
+      <div
+        class="absolute -top-20 -left-20 w-80 h-80 md:w-[30rem] md:h-[30rem] rounded-full bg-gradient-to-br from-secondary-clr/30 to-secondary-clr/10 blur-2xl z-0">
+      </div>
+      <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+        <!-- Image with 3D frame -->
+        <div class="relative w-full max-w-xs md:max-w-sm lg:max-w-md">
+          <div class="absolute -inset-3 rotate-[8deg] rounded-2xl bg-accent-clr shadow-xl z-0"></div>
+          <img src="assets/images/SPB-Photos/SPB-Photo-4.jpg" alt="SP Balasubrahmanyam"
+            class="relative z-10 rounded-2xl shadow-lg">
+        </div>
+        <!-- Text Content -->
+        <div class="text-center md:text-left space-y-4">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-clr">Aaradhya</h1>
+          <h2 class="text-lg font-semibold text-secondary-clr">The Vision</h2>
+          <p class="text-base md:text-lg leading-relaxed text-primary-clr">
+            Aaradhya is a tribute to Shri S.P. Balasubrahmanyam, celebrating his timeless legacy and music.
+          </p>
+          <p class="text-base md:text-lg leading-relaxed text-primary-clr italic">
+            Born from love and remembrance, it unites generations through his soulful voice...
+          </p>
+          <!-- <p class="text-base md:text-md leading-relaxed text-primary-clr font-medium italic">
+            Discover how his spirit lives on through every note, every memory, and every heart he touched.
+          </p> -->
+          <!-- CTA Button -->
+          <!-- <div class="mt-6"> -->
+          <a href="#vision"
+            class="inline-block px-6 py-3 rounded-full text-white bg-accent-clr hover:bg-secondary-clr transition duration-300 font-medium shadow-md">
+            Explore More
+          </a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- vision -->
+    <section id="vision"
+      class="w-[calc(100%-88px)] mx-auto rounded-2xl shadow-lg relative px-4 py-10 md:py-16  overflow-hidden">
+      <!-- Background Image with Parallax effect -->
+      <!-- <div class="vision-bg absolute inset-0 z-0">
+      </div> -->
+      <div class="space-y-8 text-white">
+        <h2 class="vision-title text-3xl md:text-4xl font-bold">The Vision</h2>
+        <p class="vision-paragraph text-base md:text-lg leading-relaxed">
+          The word <span class="highlight">Aaradhya <i class="fas fa-heart text-accent-clr"></i></span> means
+          “worshipped”. It is a Sanskrit term inferring the blessing of Lord Ganesh. <span
+            class="highlight">Aaradhya</span> is a foundation started by family members of the late <span
+            class="highlight">Shri S.P. Balasubrahmanyam <i class="fas fa-music text-accent-clr"></i></span> to
+          remember, commemorate and celebrate the legendary singer’s life and legacy. The core of <span
+            class="highlight">Aaradhya</span> dwells upon this foundation.
+        </p>
+        <p class="vision-paragraph text-base md:text-lg leading-relaxed">
+          The vision of <span class="highlight">Aaradhya</span> came into existence during the difficult time of
+          COVID-19 when the legendary singer breathed his last and attained a heavenly abode at the feet of the
+          Almighty.
+        </p>
+        <p class="vision-paragraph text-base md:text-lg leading-relaxed">
+          Though he is no longer with us, his music and songs have deeply impacted every listener’s heart, enabling them
+          to <span class="highlight">cherish</span> each emotion through his soulful voice.
+        </p>
+        <p class="vision-paragraph text-base md:text-lg leading-relaxed">
+          Such a legend must be celebrated for eternity; hence, <span class="highlight">Aaradhya</span> symbolizes his
+          earthly existence through a foundation where people come together to celebrate <span class="highlight">Shri.
+            S.P. Balasubrahmanyam and his music</span> for generations to come...
+        </p>
+      </div>
+    </section>
+    <!-- cta -->
+    <section id="memorial-cta" class="relative py-16 px-4 sm:px-8 md:px-16 overflow-hidden">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 tracking-wide">Enter the Memorial</h2>
+        <p class="text-lg md:text-xl mb-6 leading-relaxed">
+          Step into a timeless space where melodies linger and memories come alive. <br />
+          Celebrate the legacy of Shri. S.P. Balasubrahmanyam — a tribute for every heart he touched.
+        </p>
+        <a href="#memorial"
+          class="inline-block mt-4 px-8 py-3 text-lg font-semibold rounded-full bg-accent-clr text-primary-clr hover:bg-white hover:text-secondary-clr transition-all duration-300 shadow-lg">
+          Enter Now
+        </a>
+      </div>
+      <!-- Background floating note icon -->
+      <div class="absolute -top-10 -right-10 opacity-10 text-[10rem] rotate-12">
+        <i class="fas fa-music"></i>
+      </div>
     </section>
   </main>
-
   <!-- Footer -->
-  <div id="footer"></div>
-  
+  <footer class="py-8 mt-10 px-5 py-3">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- pages -->
+      <div class="col1">
+        <h5 class="text-xl font-bold mb-2">Pages</h5>
+        <ul>
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="spb-memorial.html" class="hover:text-gold">SPB Memorial</a></li>
+          <li><a href="board-members.html" class="hover:text-gold">Board Members</a></li>
+          <li><a href="gallery.html" class="hover:text-gold">Gallery</a></li>
+          <li><a href="donate.html" class="hover:text-gold">Donate</a></li>
+        </ul>
+      </div>
+      <!-- legal and policies -->
+      <div class="col2">
+        <h5 class="text-xl font-bold mb-2">Legal & Policies</h5>
+        <ul>
+          <li><a href="privacy-policy.html" class="hover:text-gold">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html" class="hover:text-gold">Terms &amp; Conditions</a></li>
+          <li><a href="Cancellation-and-Refund-Policy.html" class="hover:text-gold">Cancellation &amp; Refund Policy</a>
+          </li>
+          <li><a href="Shipping-and-Delivery-Policy.html" class="hover:text-gold">Shipping &amp; Delivery Policy</a>
+          </li>
+        </ul>
+      </div>
+      <!-- social media -->
+      <div class="col3">
+        <h5 class="text-xl font-bold mb-2">Social</h5>
+        <ul>
+          <li><a href="#" class="hover:text-gold"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#" class="hover:text-gold"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#" class="hover:text-gold"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+      <!-- contact info and address -->
+      <div class="col4">
+        <h5 class="text-xl font-bold mb-2">Contact Us</h5>
+        <p class="font-bold">Aaradhya Charitable Trust</p>
+        <address class="">Old No. 16, New No. 41,<br>Kamdar Nagar, Nungambakkam,<br>Chennai, Tamll Nadu - 600034
+        </address>
+        <p class="">Contact no.: <a href="tel:+9791014236">9791014236</a></p>
+        <p class="">Email: <a href="mailto:trustaaradhya@gmail.com">trustaaradhya@gmail.com</a></p>
+        <!-- R/Chennal Central Jolnt Il/Book-4/95/2022. -->
+        <!-- AAJTA6207EF20211 -->
+      </div>
+      <!-- <h4></h4> -->
+    </div>
+    <hr class="border-0 h-0.5 bg-white rounded-full opacity-30 my-5 w-full container mx-auto" />
+    <div class="container footer-bottom mx-auto px-4 w-full flex-wrap  md:justify-between align-center  ">
+      <p class="mb-0">&copy; 2025 Aaradhya Trust. All rights reserved.</p>
+      <p class="mb-0">Sketched with <i class="fa fa-heart"></i> by
+        <a href="https://www.tensketch.com/" class="">TenSketch</a>
+      </p>
+    </div>
+    <!-- <div class="text-center mt-4 text-gray-500">
+      ©2023 by AaradhyaTrust
+    </div> -->
+  </footer>
   <!-- Common JS: Navbar, Footer, and Image Loading -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
@@ -74,4 +215,5 @@
     loadHomeImage();
   </script>
 </body>
+
 </html>

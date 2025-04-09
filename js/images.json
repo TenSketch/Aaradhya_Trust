@@ -5,22 +5,27 @@
   "spbMemorial": {
     "video": "assets/videos/spb_memorial.mp4",
     "designPlan": [
-      { "title": "Virtual View - Day", "src": "assets/images/design-day.jpg" },
-      { "title": "Virtual View - Night", "src": "assets/images/design-night.jpg" },
-      { "title": "Walk way", "src": "assets/images/design-walk.jpg" },
-      { "title": "Amphitheatre", "src": "assets/images/design-amphi.jpg" }
+        { "title": "Virtual View - Day", "src": "assets/images/design-plan/Virtual_View-Day.jpg" },
+        { "title": "Virtual View - Night", "src": "assets/images/design-plan/Virtual_View-Night.jpg" },
+        { "title": "Virtual View - Night 1", "src": "assets/images/design-plan/Virtual_View-Night-1.jpg" },
+        { "title": "Walk Way", "src": "assets/images/design-plan/Walk_way.jpg" },
+        { "title": "Amphitheatre", "src": "assets/images/design-plan/Amphitheatre.jpg" }
+      
     ]
   },
   "gallery": {
     "images": [
-      "assets/images/gallery1.jpg",
-      "assets/images/gallery2.jpg",
-      "assets/images/gallery3.jpg",
-      "assets/images/gallery4.jpg",
-      "assets/images/gallery5.jpg",
-      "assets/images/gallery6.jpg",
-      "assets/images/gallery7.jpg",
-      "assets/images/gallery8.jpg"
+      "assets/images/gallery/SPB_Museum-photos-1.jpg",
+"assets/images/gallery/SPB_Museum-photos-2.jpg",
+"assets/images/gallery/SPB_Museum-photos-3.jpg",
+"assets/images/gallery/SPB_Museum-photos-4.jpg",
+"assets/images/gallery/SPB_Museum-photos-5.jpg",
+"assets/images/gallery/SPB_Museum-photos-6.jpg",
+"assets/images/gallery/SPB_Museum-photos-7.jpg",
+"assets/images/gallery/SPB_Museum-photos-8.jpg",
+"assets/images/gallery/SPB_Museum-photos-9.jpg",
+"assets/images/gallery/SPB_Museum-photos-10.jpg"
+
     ]
   }
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aaradhya Trust - Photo Gallery</title>
+  <title>Aaradhya Trust - Cancellation and refund policy</title>
   <!-- Meta Tags -->
   <meta name="description"
     content="Aaradhya is a heartfelt foundation honoring the timeless legacy of S.P. Balasubrahmanyam. Founded by his family, it celebrates his life, music, and the deep emotional impact he left on generations.">
@@ -59,16 +59,67 @@
   </nav>
   
   
-  <!-- Gallery Content -->
   <main class="pt-[200px] container mx-auto px-4 pb-5">
-    <h1 class="text-4xl font-bold text-gold mb-6">Gallery</h1>
-    <p class="mb-6">
-      Welcome to a bird's eye view of the tombstone where Shri S.P. Balasubrahmanyam was laid to rest.
-      Aaradhya connects the world through its architectural poetry and ode to the legendary singer.
-    </p>
-    <div id="galleryImages" class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <!-- JS will load 8 gallery images -->
-    </div>
+    
+    <!-- cancellations and refund Page -->
+    <section class="bg-white py-10 px-4 md:px-8 lg:px-16 text-gray-800">
+        <div class="max-w-4xl mx-auto space-y-6">
+          <div class="text-center">
+            <h1 class="text-4xl font-bold text-secondary mb-2">Cancellation and Refund Policy</h1>
+            <p class="text-sm text-gray-500">Last Updated: February 2025</p>
+          </div>
+      
+          <!-- 1. Donations and Refunds -->
+          <div>
+            <h2 class="text-2xl font-semibold flex items-center gap-2 text-secondary">
+              <i class="fas fa-undo-alt text-secondary"></i> Donations and Refunds
+            </h2>
+            <ul class="list-disc pl-6 mt-2 text-gray-700 space-y-1">
+              <li>Donations made to Aaradhya Charitable Trust are voluntary and non-refundable.</li>
+              <li>Refunds may be considered only in case of <strong>technical errors</strong> (e.g., duplicate transactions, incorrect amounts). Requests must be made within <strong>7 days</strong> of the donation.</li>
+              <li>Refunds will be processed after verification and will be credited to the original payment method within <strong>10-15 business days</strong>.</li>
+            </ul>
+          </div>
+      
+          <!-- 2. Event and Program Cancellations -->
+          <div>
+            <h2 class="text-2xl font-semibold flex items-center gap-2 text-secondary">
+              <i class="fas fa-calendar-xmark text-secondary"></i> Event and Program Cancellations
+            </h2>
+            <ul class="list-disc pl-6 mt-2 text-gray-700 space-y-1">
+              <li>In case of cancellation of an event or program organized by Aaradhya Charitable Trust, registered participants will be notified and refunds (if applicable) will be processed.</li>
+              <li>If the event is postponed, registration fees will be adjusted for the rescheduled date.</li>
+            </ul>
+          </div>
+      
+          <!-- 3. Subscription and Membership Cancellations -->
+          <div>
+            <h2 class="text-2xl font-semibold flex items-center gap-2 text-secondary">
+              <i class="fas fa-file-circle-xmark text-secondary"></i> Subscription and Membership Cancellations
+            </h2>
+            <ul class="list-disc pl-6 mt-2 text-gray-700 space-y-1">
+              <li>If you have subscribed to any recurring donation or membership plan, you may cancel it at any time by contacting us.</li>
+              <li>Cancellation requests must be made at least <strong>5 days</strong> before the next scheduled payment to avoid charges.</li>
+            </ul>
+          </div>
+      
+          <!-- 4. Contact for Refund Requests -->
+          <div>
+            <h2 class="text-2xl font-semibold flex items-center gap-2 text-secondary">
+              <i class="fas fa-envelope text-secondary"></i> Contact for Refund Requests
+            </h2>
+            <p class="mt-2 text-gray-700">
+              If you believe you are eligible for a refund, please email us at
+              <a href="mailto:trustaaradhya@gmail.com" class="text-blue-600 underline hover:text-blue-800 ml-1">
+                trustaaradhya@gmail.com
+              </a> with your transaction details.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      
+      
   </main>
   
  <!-- Footer -->
@@ -126,20 +177,13 @@
       <a href="https://www.tensketch.com/" class="">TenSketch</a>
     </p>
   </div>
-  <!-- <div class="text-center mt-4 text-gray-500">
-    ©2023 by AaradhyaTrust
-  </div> -->
+  
 </footer>
 
   
   <!-- Common JS: Navbar, Footer, and Image Loading -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="js/common.js"></script>
-  <script>
-    // Load gallery images
-    loadGalleryImages();
-  </script>
 </body>
 </html>
