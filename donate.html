@@ -61,7 +61,7 @@
   </nav>
   <main class="pt-20">
     <!-- Donation froms -->
-    <section class="py-12 bg-white donate-form-section bg-gradient-to-br">
+    <section class="py-12 bg-white donate-form-section ">
       <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-2 gap-10 items-center">
           <!-- Image -->
@@ -71,27 +71,17 @@
           </div>
           <!-- Form -->
           <div>
-            <div class="bg-white p-6 shadow-xl rounded-lg">
+            <div class="bg-white p-6 shadow-xl rounded-lg flex flex-col align-center">
               <h2 class="text-2xl font-bold text-secondary-clr text-center mb-2">Make a Difference – Donate Now</h2>
               <p class="text-sm text-gray-600 text-center mb-4">
                 Your details are secure and used only for tax exemptions under our
                 <a href="privacy-policy.html" class="text-blue-600 underline">Privacy Policy</a>.
               </p>
-              <div className="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_QxaDrZKJJsHhVn/view"
-                data-text="Pay Now" data-color="#DBA24D" data-size="large">
-                <script>
-                  (function () {
-                    var d = document; var x = !d.getElementById('razorpay-embed-btn-js')
-                    if (x) {
-                      var s = d.createElement('script'); s.defer = !0; s.id = 'razorpay-embed-btn-js';
-                      s.src = 'https://cdn.razorpay.com/static/embed_btn/bundle.js'; d.body.appendChild(s);
-                    } else {
-                      var rzp = window['__rzp__'];
-                      rzp && rzp.init && rzp.init()
-                    }
-                  })();
-                </script>
-              </div>
+
+              <a href="https://rzp.io/rzp/supportaaradhyatrust" target="_blank" rel="noopener noreferrer"
+                class="px-6 py-3 w-fit mx-auto rounded-full text-white bg-accent-clr hover:bg-secondary-clr transition duration-300 font-medium shadow-md text-center">
+                Contribute Now
+              </a>
 
             </div>
           </div>
@@ -188,13 +178,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="js/common.js"></script>
-  <script>
+  <!-- <script>
     document.getElementById('donationForm').addEventListener('submit', function (e) {
       e.preventDefault(); // Stop actual submission for demo
       document.getElementById('thankYouModal').classList.remove('hidden');
       document.getElementById('thankYouModal').classList.add('flex');
     });
-  </script>
+  </script> -->
 
 </body>
 
