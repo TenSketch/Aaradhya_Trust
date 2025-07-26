@@ -118,3 +118,80 @@
   </script>
 </body>
 </html>
+
+<form id="donationForm" name="Donation" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="space-y-6">
+                      <!-- Floating Inputs -->
+                      <div class="relative">
+                        <input type="text" name="donor_name" required minlength="3" maxlength="50"
+                          class="peer w-full px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-clr"
+                          placeholder=" " />
+                        <label
+                          class="absolute text-sm text-gray-500 left-3 top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm transition-all">
+                          Full Name <span class="text-red-500">*</span>
+                        </label>
+                      </div>
+                      <div class="relative">
+                        <input type="tel" name="donor_mobile" required pattern="[6-9]\d{9}" maxlength="10"
+                          class="peer w-full px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-clr"
+                          placeholder=" " />
+                        <label
+                          class="absolute text-sm text-gray-500 left-3 top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm transition-all">
+                          Mobile Number <span class="text-red-500">*</span>
+                        </label>
+                      </div>
+                      <div class="relative">
+                        <input type="email" name="donor_email" required
+                          class="peer w-full px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-clr"
+                          placeholder=" " />
+                        <label
+                          class="absolute text-sm text-gray-500 left-3 top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm transition-all">
+                          Email Address <span class="text-red-500">*</span>
+                        </label>
+                      </div>
+                      <div class="relative">
+                        <input type="text" name="donor_aadhar" required pattern="\d{12}" maxlength="12"
+                          class="peer w-full px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-clr"
+                          placeholder=" " />
+                        <label
+                          class="absolute text-sm text-gray-500 left-3 top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm transition-all">
+                          Aadhar Number <span class="text-red-500">*</span>
+                        </label>
+                        <small class="text-gray-500 text-xs">Required for tax benefits. We keep your Aadhar confidential.</small>
+                      </div>
+                      <div class="relative">
+                        <input type="text" name="donor_pan" required maxlength="10" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+                          class="peer uppercase w-full px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-clr"
+                          oninput="this.value = this.value.toUpperCase()" placeholder=" " />
+                        <label
+                          class="absolute text-sm text-gray-500 left-3 top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm transition-all">
+                          PAN Number <span class="text-red-500">*</span>
+                        </label>
+                        <small class="text-gray-500 text-xs">For issuing 80G certificates.</small>
+                      </div>
+                      <div class="relative">
+                        <input type="number" name="donation_amount" required min="100" max="1000000"
+                          class="peer w-full px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-clr"
+                          placeholder=" " />
+                        <label
+                          class="absolute text-sm text-gray-500 left-3 top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm transition-all">
+                          Donation Amount (INR) <span class="text-red-500">*</span>
+                        </label>
+                      </div>
+                      <div class="relative">
+                        <textarea name="donor_message" rows="3"
+                          class="peer w-full px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-clr"
+                          placeholder=" "></textarea>
+                        <label
+                          class="absolute text-sm text-gray-500 left-3 top-2 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm transition-all">
+                          Message (Optional)
+                        </label>
+                      </div>
+                      <div data-netlify-recaptcha="true"></div>
+                      <!-- Submit -->
+                      <div>
+                        <button type="submit"
+                          class="w-full bg-secondary text-white py-2 px-4 rounded-md hover:bg-green-800 transition">
+                          Proceed to Donate
+                        </button>
+                      </div>
+                    </form>
